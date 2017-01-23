@@ -5,11 +5,16 @@
   <link rel="stylesheet" type="" href="bower_components/angular-material/angular-material.min.css">
 </head>
 
-<body>
+<body layout="column">
 
   <md-toolbar>
     <h1>Angular Material Starter</h1>
   </md-toolbar>
+
+  <div class="container" layout="row" flex>
+    <md-sidenav md-is-locked-open="true">Sidenav</md-sidenav>
+    <md-content id="content" flex>Content</md-content>
+  </div>
 
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
